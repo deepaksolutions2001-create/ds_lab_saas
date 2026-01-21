@@ -12,6 +12,7 @@ class MedicalReportController extends Controller
 {
     protected $medicalService;
 
+    //here
     public function __construct(MedicalReportService $medicalService)
     {
         $this->medicalService = $medicalService;
