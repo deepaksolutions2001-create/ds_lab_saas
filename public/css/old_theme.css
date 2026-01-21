@@ -1,0 +1,75 @@
+:root {
+  /* --- Global Color Palette (Premium Theme) --- */
+  
+  /* Primary Brand Colors */
+  --primary-50: #eef2ff;
+  --primary-100: #e0e7ff;
+  --primary-200: #c7d2fe;
+  --primary-300: #a5b4fc;
+  --primary-400: #818cf8;
+  --primary-500: #6366f1; /* Main Primary */
+  --primary-600: #4f46e5; /* Hover/Darker */
+  --primary-700: #4338ca;
+  --primary-800: #3730a3;
+  --primary-900: #312e81;
+
+  /* Secondary/Accent Colors */
+  --secondary-500: #0f172a; /* Main Dark/Black */
+  --secondary-600: #1e293b;
+  
+  /* Success/Danger/Warning */
+  --success-bg: #dcfce7;
+  --success-text: #166534;
+  --danger-bg: #fee2e2;
+  --danger-text: #991b1b;
+  --danger-main: #ef4444;
+  --warning-text: #f59e0b;
+
+  /* Neutrals (Backgrounds, Borders, Text) */
+  --bg-body: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f1f5f9;
+  
+  --text-main: #1e293b; /* Dark Slate */
+  --text-muted: #64748b; /* Medium Slate */
+  --text-light: #94a3b8; /* Light Slate */
+  
+  --border-color: #e2e8f0;
+  --border-focus: #a5b4fc;
+
+  /* Shadows (Premium feel) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Clean Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Layout */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  
+  --header-height: 70px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Common Utility Classes for UI consistency */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}

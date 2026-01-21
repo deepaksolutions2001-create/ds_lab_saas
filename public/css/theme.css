@@ -1,0 +1,396 @@
+/* =========================================================
+   LIGHT MODE (DEFAULT)
+   ========================================================= */
+
+
+:root {
+
+    /* ===== THEME INPUTS (ADMIN / BRAND) ===== */
+    /* --theme-primary: #6366f1;
+    --theme-primary-dark: #4f46e5;
+
+    --theme-secondary: #0f172a;
+    --theme-secondary-dark: #020617; */
+
+
+
+    --theme-primary: #f97316;
+    --theme-primary-dark: #ea580c;
+
+    --theme-secondary: #0f172a;
+    --theme-secondary-dark: #020617;
+
+
+    /* --theme-primary: #dc2626;
+--theme-primary-dark: #b91c1c;
+
+--theme-secondary: #111827;
+--theme-secondary-dark: #020617; */
+
+
+    /* --theme-primary: #d4af37;
+--theme-primary-dark: #b8962e;
+
+--theme-secondary: #020617;
+--theme-secondary-dark: #020617; */
+
+
+
+
+
+    --theme-bg-body: #f8fafc;
+    --theme-bg-surface: #ffffff;
+    --theme-bg-subtle: #f1f5f9;
+
+    --theme-danger: #ef4444;
+    --theme-success: #22c55e;
+    --theme-warning: #f59e0b;
+}
+
+/* ===== SYSTEM TOKENS (DO NOT TOUCH) ===== */
+
+:root {
+    /* Primary */
+    --primary-50: color-mix(in srgb, var(--theme-primary) 5%, white);
+    --primary-100: color-mix(in srgb, var(--theme-primary) 10%, white);
+    --primary-200: color-mix(in srgb, var(--theme-primary) 25%, white);
+    --primary-300: color-mix(in srgb, var(--theme-primary) 40%, white);
+    --primary-400: color-mix(in srgb, var(--theme-primary) 60%, white);
+    --primary-500: var(--theme-primary);
+    --primary-600: var(--theme-primary-dark);
+    --primary-700: color-mix(in srgb, var(--theme-primary-dark) 85%, black);
+    --primary-800: color-mix(in srgb, var(--theme-primary-dark) 70%, black);
+    --primary-900: color-mix(in srgb, var(--theme-primary-dark) 55%, black);
+
+    /* Secondary */
+    --secondary-500: var(--theme-secondary);
+    --secondary-600: var(--theme-secondary-dark);
+
+    /* Backgrounds */
+    --bg-body: var(--theme-bg-body);
+    --bg-surface: var(--theme-bg-surface);
+    --bg-subtle: var(--theme-bg-subtle);
+
+    /* Text */
+    --text-on-primary: white;
+    --text-main: var(--theme-secondary);
+    --text-muted: color-mix(in srgb, var(--theme-secondary) 60%, white);
+    --text-light: color-mix(in srgb, var(--theme-secondary) 35%, white);
+
+    /* Status */
+    --danger-main: var(--theme-danger);
+    /* Status text */
+    --success-text: var(--theme-success);
+
+    --danger-bg: color-mix(in srgb, var(--theme-danger) 15%, white);
+    --success-bg: color-mix(in srgb, var(--theme-success) 15%, white);
+    --warning-text: var(--theme-warning);
+
+    /* Borders */
+    --border-color: color-mix(in srgb, var(--theme-secondary) 12%, white);
+    --border-focus: var(--primary-400);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px rgb(0 0 0 / 0.12);
+    --shadow-hover: 0 20px 25px rgb(0 0 0 / 0.15);
+
+    /* Typography */
+    --font-sans: var(--font-body);
+
+    /* Layout */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-full: 9999px;
+    --header-height: 70px;
+}
+
+/* =========================================================
+   SYSTEM DARK MODE (AUTO)
+   ========================================================= */
+
+/* =========================================================
+   SYSTEM DARK MODE (AUTO – SAFE VERSION)
+   ========================================================= */
+
+/* =========================================================
+   SYSTEM DARK MODE (AUTO – BRAND SAFE)
+   ========================================================= */
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+
+        /* Environment only */
+        --theme-bg-body: #020617;
+        --theme-bg-surface: #020617;
+        --theme-bg-subtle: #020617;
+
+        /* Text contrast */
+        --text-main: #e5e7eb;
+        --text-muted: #94a3b8;
+        --text-light: #64748b;
+
+        /* Borders */
+        --border-color: #1e293b;
+        --border-focus: var(--primary-400);
+
+        /* Status backgrounds (brand-safe) */
+        --danger-bg: color-mix(in srgb, var(--theme-danger) 20%, transparent);
+        --success-bg: color-mix(in srgb, var(--theme-success) 20%, transparent);
+
+        /* Shadows */
+        --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+        --shadow-md: 0 4px 6px rgb(0 0 0 / 0.5);
+        --shadow-lg: 0 10px 15px rgb(0 0 0 / 0.6);
+        --shadow-hover: 0 20px 25px rgb(0 0 0 / 0.7);
+    }
+}
+
+
+/* =========================================================
+   TYPOGRAPHY SYSTEM (2 FONT – THEME CONTROLLED)
+   ========================================================= */
+
+:root {
+
+    /* ======================
+       ADMIN FONT SELECTION
+       ====================== */
+
+    /* Change ONLY these two lines in future */
+    --theme-font-body: var(--font-poppins);
+    --theme-font-heading: var(--font-playfair);
+
+    /* --theme-font-body: var(--font-inter);
+    --theme-font-heading: var(--font-montserrat); */
+
+    /* ======================
+       FONT DEFINITIONS
+       ====================== */
+
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-roboto: 'Roboto', system-ui, -apple-system, sans-serif;
+    --font-poppins: 'Poppins', system-ui, -apple-system, sans-serif;
+    --font-montserrat: 'Montserrat', system-ui, -apple-system, sans-serif;
+    --font-playfair: 'Playfair Display', Georgia, serif;
+
+    /* ======================
+       SYSTEM MAPPED TOKENS
+       (DO NOT TOUCH)
+       ====================== */
+
+    --font-body: var(--theme-font-body);
+    --font-heading: var(--theme-font-heading);
+}
+
+
+
+
+
+
+/* ===== GLOBAL BASE STYLES ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--border-color);
+}
+
+
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+/* UI Elements (explicit safety) */
+button,
+input,
+select,
+textarea,
+label {
+    font-family: var(--font-body);
+}
+
+/* Prices & strong text */
+.price,
+.amount,
+strong,
+b {
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+/* =========================================
+   UNIVERSAL ALERTS & ERRORS
+   ========================================= */
+.alert {
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    margin-bottom: 20px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid transparent;
+}
+
+.alert-success {
+    background: var(--success-bg);
+    color: var(--success-text);
+    border-color: color-mix(in srgb, var(--theme-success) 20%, transparent);
+}
+
+.alert-error {
+    background: var(--danger-bg);
+    color: var(--danger-main);
+    border-color: color-mix(in srgb, var(--theme-danger) 20%, transparent);
+}
+
+.alert-warning {
+    background: color-mix(in srgb, var(--theme-warning) 10%, white);
+    color: var(--theme-warning);
+    border-color: color-mix(in srgb, var(--theme-warning) 20%, transparent);
+}
+
+.alert-info {
+    background: var(--primary-50);
+    color: var(--primary-700);
+    border-color: var(--primary-200);
+}
+
+/* Form Validation Styles */
+.form-input.error {
+    border-color: var(--danger-main);
+}
+
+.form-input.error:focus {
+    border-color: var(--danger-main);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--theme-danger) 20%, transparent);
+}
+
+.error-message {
+    font-family: var(--font-body);
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--danger-main);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+/* =========================================
+   UNIVERSAL MODAL (ERROR POPUP)
+   ========================================= */
+.universal-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.universal-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.universal-modal-card {
+    background: var(--bg-surface);
+    width: 90%;
+    max-width: 480px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-hover);
+    transform: scale(0.95);
+    transition: transform 0.2s;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.universal-modal.show .universal-modal-card {
+    transform: scale(1);
+}
+
+.modal-header {
+    background: var(--danger-bg);
+    color: var(--danger-main);
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid color-mix(in srgb, var(--theme-danger) 20%, transparent);
+}
+
+.modal-body {
+    padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.modal-error-list {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--text-main);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.modal-error-list li {
+    margin-bottom: 4px;
+}
+
+.modal-footer {
+    padding: 12px 20px;
+    background: var(--bg-subtle);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-close-btn {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.modal-close-btn:hover {
+    background: var(--bg-subtle);
+}
